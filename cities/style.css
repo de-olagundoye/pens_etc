@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background:rgba(230,231,232,1);
+  height:3000px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+} 
+
+div#image-background {
+  z-index: 1
+}
+
+div#content-image {
+  z-index: 2
+}
+
+div#content-text {
+  z-index: 3
+}
+
+
+div.layer {
+  position: fixed;
+  width: 1200px;
+  top: 0;
+}
+
+div#image-backgrounds div{
+  background-size: 100%;
+  background-repeat:no-repeat;
+  position:absolute;
+  display:block;
+  overflow:hidden;
+  width: 1200px;
+  height: 800px;
+}
+
+div#image-bg-1 {
+  background:url('http://l.yimg.com/os/publish-images/finance/2016-01-28/a07d0da0-c60e-11e5-9f79-af23d32b1ecf_Chicago3.jpg'); 
+  top: 20px;
+}
+
+div#image-bg-2 {
+  background:url('https://i.ytimg.com/vi/F4X4pJ5nGbM/maxresdefault.jpg');
+  top: 870px;
+}
+
+div#image-bg-3 {
+  background:url('http://blog.davidweekleyhomes.com/wp-content/uploads/2014/03/austin-skyline.jpg');
+  top: 1550px;
+}
+
+div#content-header div{
+  position:absolute;
+  display:block;
+  overflow:hidden;
+  width: 1200px;
+  height: 800px;
+  left: 200px;
+}
+
+div#header-1 {
+  top: 40px
+}
+
+div#header-2 {
+  top: 800px
+}
+
+div#header-3 {
+  top: 1350px
+}
+
+div#content-text div{
+  position:absolute;
+  display:block;
+  overflow:hidden;
+  width: 700px;
+  height: 800px;
+  left: 200px;
+}
+
+div#text-1{
+  position:relative;
+  top: 150px;
+}
+
+div#text-2{
+  top: 780px;
+}
+
+div#text-3{
+  top: 1250px;
+}
+

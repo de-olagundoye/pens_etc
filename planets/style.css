@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
+
+body{
+  background:rgba(230,231,232,1);
+  height:4600px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center;
+  color: #000080;
+} 
+
+/*Basic Properties for all Layers*/
+div.layer {
+  position: fixed;
+  width: 1200px;
+  top: 0;
+  left: 50%; 
+  margin-left: -600px; 
+}
+
+/* foreground*/
+div#layer-4{
+  z-index: 1;
+}
+/* background middle layer*/
+div#layer-3{
+  z-index: 2;
+}
+/* background layer */
+div#layer-2{
+  width: 960px;
+  margin-left: -470px; 
+  z-index: 3;
+}
+/*text layer*/
+div#layer-1{
+  z-index: 4;
+}
+
+div#layer-1 div,
+div#layer-2 div {
+  background-repeat:no-repeat;
+  position:absolute;
+  display:block;
+  overflow:hidden;
+}
+
+/*Layer 1 - Text*/
+div#element-1-1{
+  width:500px;
+  height:300px;
+  top: 100px;
+  right: 100px;
+}
+div#element-1-2{
+  width:500px;
+  height:100px;
+  top: 650px;
+}
+div#element-1-3{
+  width:300px;
+  height:200px;
+  top: 1000px;
+}
+div#element-1-4{  
+  width:1104px;
+  height:800px;
+  top: 1500px;
+}
+
+/* Layer 2 - Planets*/
+div#element-2-1{
+  background:url('img/earth.png');
+  background-size: 100%;
+  width:529px;
+  height:757px;
+  top: 50px;
+}
+div#element-2-2{
+  background:url('img/venus.png');
+  background-size: 100%;
+  width:500px;
+  height:583px;
+  top:800px;
+  right:70px;
+}
+div#element-2-3{
+  background:url('img/mercury.png');
+  background-size: 100%;
+  width:446px;
+  height:713px;
+  top:2000px;
+  right:200px;
+}
+div#element-2-4{
+  background:url('img/sun.png');
+  background-size: 100%;
+  width:1104px;
+  height:684px;
+  top:3000px;
+  right:0px;
+}
+/* Layer 3 Stars */
+div#layer-3 div{
+  background:url('img/stars3.png');
+  background-repeat:no-repeat;
+  position:absolute;
+  display:block;
+  width:488px;
+  height:138px;
+}
+
+div#element-3-1{
+  top:100px;
+  left:-310px;
+}
+div#element-3-2{
+  top:270px;
+  right:-70px;
+}
+div#element-3-3{
+  top:870px;
+  left:-300px;
+}
+div#element-3-4{
+  top:1120px;
+  right:-130px;
+}
+div#element-3-5{
+  top:1620px;
+  left:140px;
+}
+div#element-3-6{
+  top:720px;
+  left:340px;
+}
+
+/*Layer 4 - Stars (Background) */
+div#layer-4 div{
+  background-repeat:no-repeat;
+  position:absolute;
+  display:block;
+  width:488px;
+  height:138px;
+  overflow:hidden;
+}
+div#element-4-1{
+  background:url('img/stars1.png');
+  top:200px;
+  right:450px;
+}
+div#element-4-2{
+  background:url('img/stars2.png');
+  top:420px;
+  left:0px;
+}
+div#element-4-3{
+  background:url('img/stars1.png');
+  top:850px;
+  right:-290px;
+}
+div#element-4-4{
+  background:url('img/stars1.png');
+  top:1350px;
+  left:200px;
+}
+div#element-4-5{
+  background:url('img/stars2.png');
+  top:1200px;
+  left:-200px;
+}
